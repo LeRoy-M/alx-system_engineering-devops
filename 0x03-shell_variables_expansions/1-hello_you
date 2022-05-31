@@ -1,2 +1,2 @@
 #!/bin/bash
-alert "Hello $USER"
+alert "hello $USER"
