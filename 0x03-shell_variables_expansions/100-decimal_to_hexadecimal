@@ -1,0 +1,3 @@
+#!/bin/bash
+DECMAL=98 | printf "%x
+" $DECIMAL
