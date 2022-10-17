@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # This script displays "To Infinity and beyond" indefinitely, with a sleep of 2 seconds between iterations
-kill $(ps -auxf | grep 4-to_infinity_and_beyond | grep -v grep | awk "{print $2}")
+kill "$(ps -auxf | grep 4-to_infinity_and_beyond | grep -v grep | awk '{print $2}')"
