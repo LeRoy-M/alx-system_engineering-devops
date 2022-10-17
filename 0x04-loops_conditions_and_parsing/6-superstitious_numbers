@@ -3,17 +3,22 @@
 # then "bad luck from Japan" for the 9th loop iteration, and displays "17" and then "bad luck from Italy" for the 17th loop iteration
 NUM=1
 while ((NUM < 21)); do
-	if [ $NUM -eq 4 ]; then
-		echo "$NUM"
-		echo "bad luck from China"
-	elif [ $NUM -eq 9 ]; then
-		echo "$NUM"
-		echo "bad luck from Japan"
-	elif [ $NUM -eq 17 ]; then
-		echo "$NUM"
-		echo "bad luck from Italy"
-	else
-		echo "$NUM"
-	fi
+	case $NUM in
+		4)
+			echo "$NUM"
+			echo "bad luck from China"
+			;;
+		9)
+			echo "$NUM"
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "$NUM"
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo "$NUM"
+			;;
+	esac
 	((NUM++))
 done
