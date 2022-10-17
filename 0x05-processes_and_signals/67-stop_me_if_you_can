@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# This script stops "4-to_infinity_and_beyond", similarly to "5-dont_stop_me_now"
+# This script demonstrates how to make a script persist even after receiving an interrupt signal
+# This script will send the SIGTERM signal to "7-highlander"
 pkill -f "bash ./7-highlander"
