@@ -5,7 +5,7 @@
 
 echo "$$" > /var/run/myscript.pid
 
-trap sig_qt 15 3
+trap "sig_qt" 15 3
 # Executes if SIGQUIT or SIGTERM signal arises
 function sig_qt() {
 	rm /var/run/myscript.pid
