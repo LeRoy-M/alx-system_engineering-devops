@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
-# This script displays "To Infinity and beyond" indefinitely, with a sleep of 2 seconds between iterations
-kill "$(ps -auxf | grep 4-to_infinity_and_beyond | grep -v grep | awk '{print $2}')"
+# This script stops "4-to_infinity_and_beyond"
+PID=$(pgrep -f "bash ./4-to_infinity_and_beyond")
+if [ -n "$PID" ]
+then
+	kill -15 "$PID"
+fi
