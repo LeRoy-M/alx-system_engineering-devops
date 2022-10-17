@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# This script demonstrates how to make a script persist even after receiving an interrupt signal
-# This script will send the SIGTERM signal to "7-highlander"
+# This script demonstrates how to make a script persist even after receiving an interrupt signal, by sending the SIGTERM signal to "7-highlander"
 pkill -f "bash ./7-highlander"
