@@ -6,4 +6,4 @@
 5. Not quite HBTN yet [5-beginning_and_end.rb] >> Ruby script that accepts one argument and passes it to a regular expression matching method that exactly matches a string that starts with "h" ends with "n" and can have any single character in between
 6. Call me maybe [6-phone_number.rb] >> Regular expression matching a 10 digit phone number
 7. OMG WHY ARE YOU SHOUTING? [7-OMG_WHY_ARE_YOU_SHOUTING.rb] >> Regular expression only matching capital letters
-8. Textme [100-textme.rb] >> Script that outputs "[SENDER]", "[RECEIVER]", "[FLAGS]", the sender phone number or name including country code if present, the receiver phone number or name including country code if present, and the flags that were used
+8. Textme [100-textme.rb] >> Script that outputs "[SENDER]", "[RECEIVER]", "[FLAGS]"; that is the sender phone number or name including country code if present, the receiver phone number or name including country code if present, and the flags that were used
