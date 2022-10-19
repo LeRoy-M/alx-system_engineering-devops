@@ -1,0 +1,6 @@
+0. OSI model [0-OSI_model] >> Answers to "What is the OSI model?" and "How is the OSI model organized?"
+1. Types of network [1-types_of_network] >> Answers to "What type of network a computer in local is connected to?", "What type of network could connect an office in one building to another office in a building a few streets away?" and "What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?"
+2. MAC and IP address [2-MAC_and_IP_address] >> Answers to "What is a MAC address?" and "What is an IP address?"
+3. UDP and TCP [] >> Answers to "Which statement is correct for the TCP box:", "Which statement is correct for the UDP box:" and "Which statement is correct for the TCP worker:"
+4. TCP and UDP ports [4-TCP_and_UDP_ports] >> Bash script that displays listening ports by only showing listening sockets and shows the PID and name of the program to which each socket belongs
+5. Is the host on the network [5-is_the_host_on_the_network] >> Bash script that pings an IP address passed as an argument by accepting a string as an argument, displaying "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}" if no argument passed, and pings the IP 5 times
