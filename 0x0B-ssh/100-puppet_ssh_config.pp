@@ -1,12 +1,12 @@
 # Configures the SSH client configuration file
-file { '/etc/ssh/ssh_config':
-  ensure  => 'file',
+file { 'PasswordAuthentication':
+  path    => '/etc/ssh/ssh_config',
   line    => '	PasswordAuthentication no',
   replace => true,
 }
 
-file { '/etc/ssh/ssh_config':
-  ensure  => 'file',
+file { 'IdentityFile':
+  path    => '/etc/ssh/ssh_config',
   line    => '	IdentityFile ~/.ssh/school',
   replace => true,
 }
