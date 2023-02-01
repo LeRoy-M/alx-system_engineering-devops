@@ -16,6 +16,6 @@ def recurse(subreddit, hot_list=[]):
     if response.status_code == 200:
         hot_post = response.json()["data"]["children"]
         hot_list.append(hot_post)
-        recurse(subreddit, hot_list=[])
+        recurse(subreddit, hot_list)
     else:
         return hot_list
