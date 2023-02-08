@@ -21,6 +21,6 @@ To avoid such incidents going forward:
 * The Puppet manifest will has also been updated to automatically deal with similar occurences if ever there would be a repeat of the same.
 
 
-![Hi Five!](0x19-postmortem/hi-five.gif)
+![Hi Five!](https://github.com/LeRoy-M/alx-system_engineering-devops/blob/6473216f42d3a8cf1c2b536b13bb3bb1f270def3/0x19-postmortem/hi-five.gif)
 
 __All in all, job well done!__
