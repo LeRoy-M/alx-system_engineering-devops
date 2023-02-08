@@ -21,6 +21,6 @@ To avoid such incidents going forward:
 * The Puppet manifest will has also been updated to automatically deal with similar occurences if ever there would be a repeat of the same.
 
 
-![Hi Five!](http://i.imgur.com/OUkLi.gif)
+![Hi Five!](0x19-postmortem/hi-five.gif)
 
-All in all, job well done!
+__All in all, job well done!__
