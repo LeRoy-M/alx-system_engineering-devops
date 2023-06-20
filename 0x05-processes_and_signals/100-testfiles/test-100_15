@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# This script tests "100-process_and_pid_file" for the SIGTERM signal
-pkill -15 -f "bash ./100-process_and_pid_file"
