@@ -9,6 +9,5 @@ while [ $i -ne 10 ]; do
     if [ $i -eq 8 ]; then
         echo "Hi"
     fi
-    # done
     ((i+=1))
 done
