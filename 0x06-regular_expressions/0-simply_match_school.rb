@@ -1,5 +1,2 @@
 #!/usr/bin/env ruby
-
-regex = gets
-
-puts "My cli input was: #{name}!"
+puts ARGV[0].scan(/(School)/).join
