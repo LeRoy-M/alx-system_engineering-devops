@@ -1,3 +1,4 @@
+# Manifest that creates a file
 file { 'school':
   path    => /tmp/
   content => 'I love Puppet'
