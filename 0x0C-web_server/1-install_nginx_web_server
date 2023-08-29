@@ -2,4 +2,5 @@
 # Script that installs 'Nginx' web server
 apt-get update && apt-get -y upgrade;
 apt-get -y --force-yes install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip apache2-utils;
-apt-get install nginx;
+apt-get install -y nginx;
+service nginx restart;
