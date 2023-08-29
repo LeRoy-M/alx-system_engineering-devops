@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Script that installs 'Nginx' web server
-apt-get update && apt-get -y upgrade;
-apt-get -y --force-yes install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip apache2-utils;
-apt-get install -y nginx;
-service nginx restart;
+apt-get update && apt-get -y upgrade
+apt-get -y --force-yes install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip apache2-utils
+apt-get install -y nginx
+mkdir /etc/nginx/html && echo ""
+printf %s "server {
+	listen 80;
+}"
+service nginx restart
