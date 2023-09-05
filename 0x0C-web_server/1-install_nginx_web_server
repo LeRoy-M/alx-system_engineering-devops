@@ -1,10 +1,22 @@
 #!/usr/bin/env bash
-# Script that installs 'Nginx' web server
-apt-get update && apt-get -y upgrade
-apt-get -y --force-yes install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip apache2-utils
-apt-get install -y nginx
-mkdir /etc/nginx/html && echo ""
-printf %s "server {
-	listen 80;
-}"
+# Script that configures a second web server
+apt update && apt install -y nginx
+
+mkdir -p /etc/nginx
+printf  "events {
+	# configuration of connection processing
+}
+
+http {
+	include mime.types;
+
+	server {
+		listen 80 default_server;
+		listen [::]:80 default_server;
+		location / {'Hello World!'}
+	}
+
+}
+" > /etc/nginx/nginx.config
+
 service nginx restart
