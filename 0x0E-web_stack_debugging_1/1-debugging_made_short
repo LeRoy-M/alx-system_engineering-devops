@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Script that automates fix like in task #0, in less than 5 lines
-sed -ie "s/8080/80/g" /etc/nginx/sites-enabled/default
+sed -ie "s/8080/80/g" /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
 service nginx restart
-pkill "$(ps -p "$(pgrep -f ./nginx)" -o comm=)"
+#pkill "$(ps -p "$(pgrep -f ./nginx)" -o comm=)"
