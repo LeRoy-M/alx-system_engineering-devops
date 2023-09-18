@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Script that redirects port '8080/TCP' to '80/TCP'
+apt-get -y install ufw
+sed -i "s/IPV6=no/IPV6=yes/" /etc/default/ufw
+ufw default allow outcoming
+ufw default deny incoming
+ufw allow ssh '(22/tcp port)'
+ufw allow 443/tcp '(HTTPS SSL)'
+ufw allow 80/tcp '(HTTP)'
+printf %s "*nat
+:PREROUTING ACCEPT [0:0]
+- A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+COMMIT
+" >> /etc/ufw/before.rules
+service ufw restart
+ufw enable
