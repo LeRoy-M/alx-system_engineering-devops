@@ -1,6 +1,6 @@
 #!/bin/usr/env bash
 # Script that installs 'ufw' firewall
 apt-get install ufw
-ufw allow 22/tcp
-ufw allow 443/tcp
-ufw allow 80/tcp
+ufw allow ssh '(22/tcp port)'
+ufw allow 443/tcp '(HTTPS SSL)'
+ufw allow 80/tcp '(HTTP)'
