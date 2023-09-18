@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Script that installs 'ufw' firewall
-apt-get install ufw
+apt-get install -y ufw
 ufw enable
 sed -i "s/IPV6=.*/IPV6=yes/" /etc/default/ufw
 ufw default allow outcoming
