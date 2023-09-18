@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script that installs 'ufw' firewall
 apt-get -y install ufw
-sed -i "s/IPV6=no/IPV6=yes/" /etc/default/ufw
+sed -ie "s/IPV6=no/IPV6=yes/g" /etc/default/ufw
 ufw default allow outgoing
 ufw default deny incoming
 ufw allow ssh '(22/tcp port)'
