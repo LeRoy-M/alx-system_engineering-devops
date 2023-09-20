@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-# Script that installs 'ufw' firewall
 apt update -y && apt-get -y install ufw
 sed -i "s/IPV6=.*/IPV6=yes/" /etc/default/ufw
 ufw disable
