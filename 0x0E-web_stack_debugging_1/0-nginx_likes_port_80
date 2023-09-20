@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Script that automates fix for Ubuntu container Nginx installation
-sudo rm /etc/nginx/sites-enabled/default
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+sed -ie "s/8080/80/g" /etc/nginx/sites-enabled/default
+service nginx restart
