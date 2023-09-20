@@ -1,9 +1,9 @@
-apt update -y && apt-get -y install ufw
-sed -i "s/IPV6=.*/IPV6=yes/" /etc/default/ufw
-ufw disable
-ufw enable
-ufw default allow outgoing
-ufw default deny incoming
-ufw allow ssh "(22/tcp port)"
-ufw allow 443/tcp "(HTTPS SSL)"
-ufw allow 80/tcp "(HTTP)"
+sudo pt update -y && apt-get -y install ufw
+sudo sed -i "s/IPV6=.*/IPV6=yes/" /etc/default/ufw
+sudo ufw disable
+sudo ufw enable
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw allow ssh "(22/tcp port)"
+sudo ufw allow 443/tcp "(HTTPS SSL)"
+sudo ufw allow 80/tcp "(HTTP)"
