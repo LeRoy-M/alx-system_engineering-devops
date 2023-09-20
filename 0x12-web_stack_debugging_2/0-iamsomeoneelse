@@ -2,7 +2,7 @@
 # Script that accepts one argument, runs the 'whoami' command under the user
 # passed as an argument
 if [ -n "$1" ]; then
-	sudo "$1" whoami
+	sudo -u "$1" whoami
 else 
 	whoami
 fi
