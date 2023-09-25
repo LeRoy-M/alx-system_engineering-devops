@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     with open(f"{argv[1]}.csv", mode="w") as to_csv:
         writer = csv.writer(to_csv, delimiter=",", quotechar='"',
-                            quoting=csv.QUOTE_MINIMAL)
+                            quoting=csv.QUOTE_ALL)
         for i in range(tasks):
             writer.writerow([response1.get("id"), response1.get("username"),
                             response2[i]["completed"], response2[i]["title"]])
