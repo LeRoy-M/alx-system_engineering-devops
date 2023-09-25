@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Module that uses a REST API for a given emplyoee ID and then
-returns information about their TODO list progress
+"""Module that uses a REST API for a given employee ID to export
+data into a CSV file
 """
 import csv
 import json
