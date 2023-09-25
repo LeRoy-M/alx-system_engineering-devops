@@ -13,11 +13,7 @@ if __name__ == "__main__":
     response1 = json.loads(requests.get(url1).text)
     response2 = json.loads(requests.get(url2).text)
     tasks = response2.__len__()
-    tc_list = []
-
-    for i in range(tasks):
-        if response2[i]["completed"]:
-            tc_list.append(i)
+    tc_list = [i for i in range(tasks) if response2[i]["completed"]]
 
     print("Employee {} is done with tasks({}/{}):".format(
         response1.get("name"), len(tc_list), tasks))
