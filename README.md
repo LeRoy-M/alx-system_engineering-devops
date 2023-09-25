@@ -34,3 +34,15 @@ _**Project Scoope**_ - `DevOps` `SysAdmin` `Scripting` `Debugging`
 _**Project Scoope**_ - `DevOps` `SysAdmin` `Scripting` `Debugging`
 ## 0x0F. Load balancer
 _**Project Scoope**_ - `DevOps` `SysAdmin`
+## 0x10. HTTPS SSL
+_**Project Scoope**_ - `DevOps` `SysAdmin` `Security`
+## 0x11. What happens when you type google.com in your browser and press Enter
+_**Project Scoope**_ - `DevOps` `Network` `SysAdmin`
+## 0x12. Web stack debugging #2
+_**Project Scoope**_ - `DevOps` `SysAdmin` `Scripting` `Debugging`
+## 0x13. Firewall
+_**Project Scoope**_ - `DevOps` `SysAdmin` `Security`
+## 0x14. MySQL
+_**Project Scoope**_ - `DevOps` `SysAdmin` `MySQL`
+## 0x15. API
+_**Project Scoope**_ - `Python` `Scripting` `Back-end` `API`
