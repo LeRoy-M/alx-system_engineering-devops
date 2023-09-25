@@ -22,11 +22,10 @@ if __name__ == "__main__":
 
     t_lists = {
         f"{response1.get('id')}": [{
-            "task": f"{response2[i]['title']}",
-            "completed": f"{response2[i]['completed']}",
+            "task": f"{response2[i].get('title')}",
+            "completed": f"{response2[i].get('completed')}",
             "username": f"{response1.get('username')}"}
             for i in range(tasks)]}
 
     with open(f"{argv[1]}.json", mode="w") as to_json:
-        #to_json.write(json.dumps(t_lists))
         json.dump(t_lists, to_json)
