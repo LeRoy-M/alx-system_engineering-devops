@@ -1,4 +1,4 @@
-## 0x14-mysql
+## 0x14. MySQL
 
 **0. Install MySQL** >> Installing MySQL (a 5.7.x distribution) on both `web-01` and `web-02` servers.
 
