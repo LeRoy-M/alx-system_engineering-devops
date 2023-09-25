@@ -8,7 +8,6 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    """Main Program"""
     url1 = f"https://jsonplaceholder.typicode.com/users/{argv[1]}"
     url2 = f"https://jsonplaceholder.typicode.com/users/{argv[1]}/todos"
     response1 = json.loads(requests.get(url1).text)
