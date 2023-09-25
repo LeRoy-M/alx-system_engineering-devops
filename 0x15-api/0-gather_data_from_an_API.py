@@ -20,7 +20,7 @@ if __name__ == "__main__":
         if response2[i]["completed"]:
             tc_list.append(i)
 
-    print("Employee {} is done with tasks ({}/{}):".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         response1.get("name"), len(tc_list), tasks))
     for i in range(len(tc_list)):
         print(f"\t {response2[tc_list[i]]['title']}")
