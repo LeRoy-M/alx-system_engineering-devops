@@ -28,4 +28,5 @@ if __name__ == "__main__":
             for i in range(tasks)]}
 
     with open(f"{argv[1]}.json", mode="w") as to_json:
-        to_json.write(json.dumps(t_lists))
+        #to_json.write(json.dumps(t_lists))
+        json.dump(t_lists, to_json)
