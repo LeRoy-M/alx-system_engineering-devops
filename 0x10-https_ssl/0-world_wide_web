@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script that configures a domain zone
+zone () {
+	echo "The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]"
+}
