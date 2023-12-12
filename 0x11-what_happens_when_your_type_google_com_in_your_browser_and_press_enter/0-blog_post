@@ -1,0 +1,6 @@
+What happens when you type google.com in your browser and press Enter
+=====================================================================
+
+- The first step is that the browser tries to resolve the hostname into an IP address. This is done by checking the browser's dns cache for the relevant IP address. If not found, the OS dns cache is checked, if it is still not available, the request is past on to a resolver server (most likely the ISP), which also checks its cache. If not found, a request is made to the root server which directs the resolver to the top level domain if it cannot find the IP address. The TLD returns a list of name servers if it also cannot resolve, of which the resolver can get the IP address from one of the available ones.
+
+- Once the IP address is found, the browser a DNS request is made.
