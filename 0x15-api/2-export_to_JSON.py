@@ -4,12 +4,12 @@ data into a JSON file
 """
 import json
 import requests
-from sys import argv
+import sys
 
 
-if __name__ == "__main__":
-    url1 = f"https://jsonplaceholder.typicode.com/users/{argv[1]}"
-    url2 = f"https://jsonplaceholder.typicode.com/users/{argv[1]}/todos"
+def export_to_json(sys.argv):
+    url1 = f"https://jsonplaceholder.typicode.com/users/{sys.argv[1]}"
+    url2 = f"https://jsonplaceholder.typicode.com/users/{sys.argv[1]}/todos"
     response1 = json.loads(requests.get(url1).text)
     response2 = json.loads(requests.get(url2).text)
     tasks = response2.__len__()
@@ -27,5 +27,9 @@ if __name__ == "__main__":
             "username": f"{response1.get('username')}"}
             for i in range(tasks)]}
 
-    with open(f"{argv[1]}.json", mode="w") as to_json:
+    with open(f"{sys.argv[1]}.json", mode="w") as to_json:
         json.dump(t_lists, to_json)
+
+
+if __name__ == "__main__":
+    export_to_json(sys.argv)
