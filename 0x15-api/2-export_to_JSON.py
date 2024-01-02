@@ -20,12 +20,12 @@ def export_to_json(args):
     for i in range(len(tc_list)):
         print(f"\t {response2[tc_list[i]]['title']}")
 
-    t_lists = [{
+    t_lists = {
         f"{response1.get('id')}": [{
             "task": f"{response2[i].get('title')}",
             "completed": f"{response2[i].get('completed')}",
             "username": f"{response1.get('username')}"}
-            for i in range(tasks)]}]
+            for i in range(tasks)]}
 
     with open(f"{args[1]}.json", mode="w") as to_json:
         json.dump(t_lists, to_json)
