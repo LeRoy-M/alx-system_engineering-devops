@@ -12,7 +12,7 @@ def top_ten(subreddit):
                "Safari/537.36"}
     try:
         url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=9"
-        response = requests.get(url, headers=headers, allow_redirects=False)
+        response = requests.get(url, headers=headers)
         top_titles = response.json().get("data").get("children")
 
         for _ in top_titles:
