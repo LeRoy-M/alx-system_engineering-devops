@@ -15,8 +15,7 @@ def top_ten(subreddit):
         response = requests.get(url, headers=headers)
         top_titles = response.json().get("data").get("children")
 
-        for _ in top_titles:
-            print(_.get("data").get("title"))
+        [print(_.get("data").get("title")) for _ in top_titles]
     except Exception:
         print(None)
 
