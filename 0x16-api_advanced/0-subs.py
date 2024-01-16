@@ -10,10 +10,10 @@ def number_of_subscribers(subreddit):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 " +
                "Safari/537.36"}
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    response = requests.get(url, headers=headers, allow_redirects=False)
-
     try:
+        url = f"https://www.reddit.com/r/{subreddit}/about.json"
+        response = requests.get(url, headers=headers, allow_redirects=False)
+
         return response.json().get("data").get("subscribers")
     except Exception:
         return 0
