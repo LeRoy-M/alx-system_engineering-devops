@@ -2,7 +2,6 @@
 """Module that queries a Reddit API and returns the number of
 subscribers for a given subreddit.
 """
-import json
 import requests
 
 
@@ -14,12 +13,10 @@ def number_of_subscribers(subreddit):
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     response = requests.get(url, headers=headers, allow_redirects=False)
 
-    if response.status_code == 200:
+    try:
         return response.json().get("data").get("subscribers")
-    elif response.status_code == 404:
+    except:
         return 0
-    else:
-        raise Exception()
 
 
 if __name__ == "__main__":
