@@ -16,8 +16,10 @@ def number_of_subscribers(subreddit):
 
     if response.status_code == 200:
         return response.json().get("data").get("subscribers")
-    else:
+    elif response.status_code == 404:
         return 0
+    else:
+        raise Exception()
 
 
 if __name__ == "__main__":
