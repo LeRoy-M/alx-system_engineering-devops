@@ -48,4 +48,5 @@ _**Project Scoope**_ - `DevOps` `SysAdmin` `MySQL`
 _**Project Scoope**_ - `Python` `Scripting` `Back-end` `API`
 ## 0x16. API advanced
 _**Project Scoope**_ - `Python` `Scripting` `Back-end` `API`
-_**Project Scoope**_ - `Python` `Scripting` `Back-end` `API`
+## 0x17. Web stack debugging #3
+_**Project Scoope**_ - `Devops` `SysAdmin` `Scripting` `Debugging`
