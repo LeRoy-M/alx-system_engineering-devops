@@ -50,3 +50,5 @@ _**Project Scoope**_ - `Python` `Scripting` `Back-end` `API`
 _**Project Scoope**_ - `Python` `Scripting` `Back-end` `API`
 ## 0x17. Web stack debugging #3
 _**Project Scoope**_ - `Devops` `SysAdmin` `Scripting` `Debugging`
+## 0x18. Webstack monitoring
+_**Project Scoope**_ - `Devops` `SysAdmin` `monitoring`
