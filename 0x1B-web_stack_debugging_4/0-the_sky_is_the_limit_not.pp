@@ -1,7 +1,5 @@
 # Manifest that tests how well the web server setup works
 exec { 'skynotlimit':
-  command     => 'curl -X POST -H "Content-Type: application/json" -d @/path/to/body.json http://localhost',
-  path        => ['/usr/bin/', '/bin'],
-  onlyif      => 'test -f /path/body.json',
-  refreshonly => true,
+  command => 'sudo sed -i "s/15/10000" /etc/default/nginx && sudo service nginx restart',
+  path    => ['/usr/local/bin/', '/usr/local/sbin/', '/usr/bin/', '/usr/sbin/', '/bin/'],
 }
